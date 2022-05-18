@@ -208,10 +208,7 @@ namespace RazerClipboard
                 System.Windows.Forms.SendKeys.SendWait("^v");
             }
             content8 = currentt;
-            StreamWriter sw = File.AppendText(@"Default/8.txt");
-            sw.Write(content8);
-            sw.Flush();
-            sw.Close();
+            File.WriteAllText(@"Default/8.txt", content8);
         }
 
         private void OneightPress(object sender, System.EventArgs e)
@@ -234,10 +231,7 @@ namespace RazerClipboard
                 System.Windows.Forms.SendKeys.SendWait("^v");
             }
             content7 = currentt;
-            StreamWriter sw = File.AppendText(@"Default/7.txt");
-            sw.Write(content7);
-            sw.Flush();
-            sw.Close();
+            File.WriteAllText(@"Default/7.txt", content7);
         }
 
         private void OnsevenPress(object sender, System.EventArgs e)
@@ -260,10 +254,7 @@ namespace RazerClipboard
                 System.Windows.Forms.SendKeys.SendWait("^v");
             }
             content6 = currentt;
-            StreamWriter sw = File.AppendText(@"Default/6.txt");
-            sw.Write(content6);
-            sw.Flush();
-            sw.Close();
+            File.WriteAllText(@"Default/6.txt", content6);
         }
 
         private void OnsixPress(object sender, System.EventArgs e)
@@ -286,10 +277,7 @@ namespace RazerClipboard
                 System.Windows.Forms.SendKeys.SendWait("^v");
             }
             content5 = currentt;
-            StreamWriter sw = File.AppendText(@"Default/5.txt");
-            sw.Write(content5);
-            sw.Flush();
-            sw.Close();
+            File.WriteAllText(@"Default/5.txt", content5);
         }
 
         private void OnfourPress(object sender, System.EventArgs e)
@@ -312,10 +300,7 @@ namespace RazerClipboard
                 System.Windows.Forms.SendKeys.SendWait("^v");
             }
             content4 = currentt;
-            StreamWriter sw = File.AppendText(@"Default/4.txt");
-            sw.Write(content4);
-            sw.Flush();
-            sw.Close();
+            File.WriteAllText(@"Default/4.txt", content4);
         }
 
         private void OnthreePress(object sender, System.EventArgs e)
@@ -338,10 +323,7 @@ namespace RazerClipboard
                 System.Windows.Forms.SendKeys.SendWait("^v");
             }
             content3 = currentt;
-            StreamWriter sw = File.AppendText(@"Default/3.txt"); 
-            sw.Write(content3);
-            sw.Flush();
-            sw.Close();
+            File.WriteAllText(@"Default/3.txt", content3);
         }
        
         private void OntwoPress(object sender, System.EventArgs e)
@@ -364,10 +346,7 @@ namespace RazerClipboard
                 System.Windows.Forms.SendKeys.SendWait("^v");
             }
             content2 = currentt;
-            StreamWriter sw = File.AppendText(@"Default/2.txt");
-            sw.Write(content2);
-            sw.Flush();
-            sw.Close();
+            File.WriteAllText(@"Default/2.txt", content2);
         }
 
         private void OnonePress(object sender, System.EventArgs e)
@@ -390,10 +369,7 @@ namespace RazerClipboard
                 System.Windows.Forms.SendKeys.SendWait("^v");
             }
             content1 = currentt;
-            StreamWriter sw = File.AppendText(@"Default/1.txt"); 
-            sw.Write(content1);
-            sw.Flush();
-            sw.Close();
+            File.WriteAllText(@"Default/1.txt", content1); 
         }
 
         public static void AddClip(int num)
