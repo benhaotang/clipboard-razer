@@ -100,6 +100,7 @@ namespace RazerClipboard
             text7.Text = content7;
             content8 = File.ReadAllText(@"Default/8.txt");
             text8.Text = content8;
+            sbInstance.Touchpad.EnableOSGesture(GestureTypes.All);
 
             sbInstance.DynamicKeys.Enable(DynamicKeyType.DK1, OnonePress, @"Default\Images\k1.png");
             sbInstance.DynamicKeys.Enable(DynamicKeyType.DK2, OntwoPress, @"Default\Images\k2.png");
